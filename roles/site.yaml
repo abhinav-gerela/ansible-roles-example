@@ -1,0 +1,6 @@
+---
+- hosts: web
+  roles:
+    - abhinav
+    - idealista.fluentd-role
+

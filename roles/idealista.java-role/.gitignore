@@ -1,0 +1,6 @@
+.molecule
+.vagrant
+.cache
+.python-version
+Pipfile
+Pipfile.lock

@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+    - wget: pkg={{item }} state=installed
+      with_items:
+        - git
+        - vim

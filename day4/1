@@ -1,0 +1,10 @@
+- host: all
+  gather_facts: False
+  vars_prompt:
+    - name: "Version"
+      prompt:"Whivh version?"
+
+  tasks:
+    - name:Prompt
+    - debug:
+        msg:"{{ Version }}"

@@ -1,0 +1,9 @@
+    - hosts: all
+      vars:
+        test1: "RedHat"
+      tasks:
+      - name: Ansible when variable equals example
+        debug:
+          msg: "Equals"
+        when : ansible_distribution_major_version == "7"
+

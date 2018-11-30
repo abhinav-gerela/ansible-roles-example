@@ -1,0 +1,9 @@
+- hosts: all
+  vars_files:
+     - "external_vars.yml"
+tasks:
+	- debug: 
+      msg: "{{ packagename }}"
+	- yum: name={{packagename}} state=present
+    - service: name={{packagename}} enable=yes state=started	
+	

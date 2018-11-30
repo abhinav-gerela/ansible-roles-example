@@ -1,0 +1,6 @@
+- hosts: webe
+  sudo: yes
+
+  tasks:
+  - name: host
+    yum: name=httpd

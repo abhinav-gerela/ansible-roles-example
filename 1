@@ -1,0 +1,6 @@
+
+- hosts: web
+  sudo: yes
+
+  tasks:
+     - service: name=httpd state=started 

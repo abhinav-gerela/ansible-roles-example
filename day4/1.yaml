@@ -1,0 +1,13 @@
+- hosts: all
+  gather_facts: False
+  vars_prompt:
+    - name: "Version"
+      prompt: "Which version?"
+
+  tasks:
+    - name: Prompt
+      debug:
+        msg:"{{ Version }}"
+    - name: Include a play after another play
+      include: 2.yaml
+
